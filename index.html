@@ -41,8 +41,10 @@
     <section class="home" id="home">
         <div class="home-text">
             <h1>Keep <span>your grass</span> <br>Greener <br>every season</h1>
-            <a href="#" class="btn">Explore our services <i class='bx bxs-right-arrow' ></i></a>
-            <a href="#" class="btn2">Book Now</a>
+            <div class="btn-group">
+                <a href="#shop" class="btn">Explore our services <i class='bx bxs-right-arrow'></i></a>
+                <button class="btn2 book-trigger" data-service="Full Lawn Care">Book Now</button>
+            </div>
         </div>
 
         <div class="home-img">
@@ -101,7 +103,7 @@
                         <h6>R80</h6>
                     </div>
                     <div class="s-btnn">
-                        <a href="#">Book Now</a>
+                        <button class="book-trigger" data-service="Lawn Trimming">Book Now</button>
                     </div>
                 </div>
 
@@ -119,7 +121,7 @@
                         <h6>R150</h6>
                     </div>
                     <div class="s-btnn">
-                        <a href="#">Book Now</a>
+                        <button class="book-trigger" data-service="Landscaping & Irrigation">Book Now</button>
                     </div>
                 </div>
 
@@ -137,7 +139,7 @@
                         <h6>R200</h6>
                     </div>
                     <div class="s-btnn">
-                        <a href="#">Book Now</a>
+                        <button class="book-trigger" data-service="Garden Maintenance">Book Now</button>
                     </div>
                 </div>
 
@@ -148,7 +150,7 @@
         </div>
 
         <div class="row-btn">
-            <a href="#" class="btn">All services <i class='bx bxs-right-arrow' ></i></a>
+            <a href="#booking" class="btn">All services <i class='bx bxs-right-arrow' ></i></a>
         </div>
     </section>
 
@@ -220,6 +222,62 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!---booking--->
+    <section class="booking" id="booking">
+        <div class="booking-wrapper">
+            <div class="booking-text">
+                <h4>Schedule A Visit</h4>
+                <h2>Book Premium Lawn Care</h2>
+                <p>Select the service you need, choose your preferred date, and our team will confirm within a business day.</p>
+            </div>
+            <form id="booking-form" class="booking-form" novalidate>
+                <div class="form-grid">
+                    <label class="form-field">
+                        <span>Full Name</span>
+                        <input type="text" name="fullName" placeholder="e.g. Thabo M." required>
+                    </label>
+                    <label class="form-field">
+                        <span>Email Address</span>
+                        <input type="email" name="email" placeholder="you@mail.com" required>
+                    </label>
+                    <label class="form-field">
+                        <span>Mobile Number</span>
+                        <input type="tel" name="phone" placeholder="+27 82 123 4567" required>
+                    </label>
+                    <label class="form-field">
+                        <span>Service</span>
+                        <select name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="Lawn Trimming">Lawn Trimming</option>
+                            <option value="Landscaping & Irrigation">Landscaping & Irrigation</option>
+                            <option value="Garden Maintenance">Garden Maintenance</option>
+                            <option value="Custom Consultation">Custom Consultation</option>
+                        </select>
+                    </label>
+                    <label class="form-field">
+                        <span>Preferred Date</span>
+                        <input type="date" name="date" required>
+                    </label>
+                    <label class="form-field">
+                        <span>Preferred Time</span>
+                        <input type="time" name="time" required>
+                    </label>
+                </div>
+                <label class="form-field">
+                    <span>Notes for our team</span>
+                    <textarea name="notes" rows="4" placeholder="Tell us about your lawn, gate codes, or any special requests."></textarea>
+                </label>
+                <div class="form-action">
+                    <button type="submit" class="btn submit-btn">
+                        Confirm Booking
+                        <i class='bx bxs-right-arrow'></i>
+                    </button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </div>
+            </form>
         </div>
     </section>
 
